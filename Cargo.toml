@@ -1,8 +1,16 @@
 [package]
-name = "random-lfsr-256-galois"
-version = "0.1.0"
+name = "random_lfsr_256_galois"
+version = "22.10.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+description = "Simple random generator imlplementation based on linear feedback shift register (LFSR, Galois variation) on 256-bit polynome"
+license = "X11"
 
 [dependencies]
+num-traits = "0.2.15"
+rand = "0.8.4"
+serde = { version =  "1.0.144", features = ["derive"]}
+serde_derive = "1.0.145"
+serde_json = "1.0"
+
+[dev-dependencies]
+rstest = "0.15.0"
