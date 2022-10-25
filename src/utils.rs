@@ -5,6 +5,7 @@
 ///
 /// Function returns size of minimal generation polynome.
 ///
+#[cfg(test)]
 pub fn bm_find(s: &[u8]) -> i32 {
     let ulen = s.len();
     let len = ulen as i32;
@@ -14,7 +15,7 @@ pub fn bm_find(s: &[u8]) -> i32 {
     let mut d: u8;
     let mut b: Vec<u8> = vec![0; ulen];
     let mut c: Vec<u8> = vec![0; ulen];
-    let mut t: Vec<u8> = vec![0; ulen];
+    let mut t: Vec<u8>;
 
     //Initialization
     b[0] = 1;

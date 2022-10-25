@@ -2,6 +2,7 @@
 name = "random_lfsr_256_galois"
 version = "22.10.0"
 edition = "2021"
+repository = "https://github.com/zavijavasoft/random-lfsr-256-galois"
 description = "Simple random generator imlplementation based on linear feedback shift register (LFSR, Galois variation) on 256-bit polynome"
 license = "X11"
 
